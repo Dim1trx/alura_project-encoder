@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="script/app.js"></script>
+</head>
+<body>
+    <main class="content">
+        <div class="logo_div">
+            <img class="header__logo" src="assets/Logo.svg" alt="alura logo">
+        </div>
+
+        <div class="content__left_div">
+            <div class="content__left_text">
+                <textarea id="input" placeholder="Digite seu texto"></textarea>
+            </div>
+
+            <div class="content__left_div__below">
+                <div class="content__left_div__below__text">
+                    <img src="assets/bi_exclamation-circle-fill.png" alt="exclamation mark">
+
+                    <p>Apenas letras minúsculas e sem acento.</p>
+                </div>
+
+                <div class="content__left_div__below__buttons">
+                    <button id="criptograph" type="button" onclick="criptograph()">Criptografar</button>
+                    <button id="decode" type="button" onclick="decode()">Descriptografar</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="content__right_div">
+            <div class="content__section__rectangle__div">
+                <img  id="rectangle_img" src="assets/High quality products 1 1.svg" alt="boy with a magnifier">
+
+                <div class="content__section__rectangle__text">
+                    <h2 id="rectangle_h2" class="content__section__rectangle__h2">Nenhuma mensagem encontrada</h2>
+                    <p id="rectangle_text" class="content__section__rectangle__paragraph">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

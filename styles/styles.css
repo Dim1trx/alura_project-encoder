@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+:root{
+    --main--bg-color: #F3F5FC;
+    --dark--blue: #0A3871;
+    --secundary--text--color:#495057;
+    --hover--color:#183D3D;
+
+    --principal--font: 'Krona one', sans-serif;
+    --secundary--font: 'Montserrat', sans-serif;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--main--bg-color);
+}
+
+.content{
+    display: flex;
+    padding: 2.5rem 2.5rem;
+    gap: 5rem;
+}
+
+
+.logo_div{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.5rem;
+}
+
+.content__left_div{
+    display: flex;
+    flex-direction: column;
+    width: 42.5rem;
+    padding-top: 8rem;
+    gap: 40rem;
+}
+
+#input{
+    font-family: 'Inter', sans-serif;
+    width: 42.5rem;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 3rem;
+    background: transparent;
+    border: none;
+    color: var(--dark--blue);
+    resize: none; /* Impede a redimensionamento pelo usuário */
+    overflow: auto;
+}
+
+#input::placeholder{
+    color: var(--dark--blue);
+}
+
+#input:focus {
+    outline: none;
+    border: 2px solid var(--hover--color); /* Adicione um estilo de contorno alternativo */
+}
+
+.content__left_div__below{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.content__left_div__below__text{
+    display: flex;
+    gap: 0.5rem;
+}
+.content__left_div__below__buttons{
+    display: flex;
+    gap: 1.5rem;
+    width: 42.5rem;
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+button{
+    width: 20.5rem;
+    padding: 1.5rem;
+    gap: 0.5rem;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    text-align: center;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 1.5rem;
+    cursor: pointer;
+}
+
+#criptograph{
+    background-color: var(--dark--blue);
+    color: var(--White, #FFF);
+    
+}
+
+#decode{
+    background-color: #D8DFE8;
+    text-align: center;
+    color: var(--dark--blue);
+}
+
+#copy{
+    background: none;
+    width: 21rem;
+    color: var(--dark--blue);
+    margin-bottom: 1.56rem;
+}
+
+.content__right_div {
+    width: 25rem;
+    height: 62.5rem;
+    border-radius: 2rem;
+    background: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2rem 0 2rem;
+}
+
+.content__section__rectangle__div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    gap: 2rem;
+}
+
+#rectangle_img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.content__section__rectangle__text {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-family: 'Inter', sans-serif;
+    align-self: stretch;
+    text-align: center;
+}
+
+.content__section__rectangle__h2 {
+    color: var(--Gray-gray-500, #343A40);
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.8rem;
+}
+
+.content__section__rectangle__paragraph {
+    color: var(--Gray-gray-400, #495057);
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
